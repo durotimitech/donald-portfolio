@@ -4,7 +4,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p $PORT",
+    "heroku-postbuild":"npm run build",
+    "deploy":"git add . && git commit -m 'deploy' && git push -u origin master",
     "lint": "next lint"
   },
   "dependencies": {
