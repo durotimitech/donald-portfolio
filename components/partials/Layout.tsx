@@ -63,6 +63,9 @@ const Layout: React.FC<IProps> = ({ children }) => {
 
   useEffect(() => {
     switch (path) {
+      case "/":
+        setPageTitle("Home");
+        break;
       case "/services":
         setPageTitle("Services");
         break;
@@ -116,7 +119,9 @@ const Layout: React.FC<IProps> = ({ children }) => {
           </PageTitle>
         </>
       )}
+
       {children}
+
       <Footer>&copy; 2021 DONALD EBUBE ALL RIGHT RESERVED</Footer>
     </Container>
   );

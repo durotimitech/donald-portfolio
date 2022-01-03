@@ -1,9 +1,8 @@
-import React from 'react'
-import Home from '~/components/partials/Home'
+import React from "react";
+import Home from "~/components/partials/Home";
 
 const index = () => {
-    return <Home />
-    
-}
+  return <Home />;
+};
 
-export default index
+export default index;

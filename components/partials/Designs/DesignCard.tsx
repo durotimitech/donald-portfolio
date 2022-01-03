@@ -20,6 +20,7 @@ const Card = styled.div`
   gap: 0.2rem;
   border: 1px solid gray;
   padding: 1rem;
+  height: 120px;
   cursor: pointer;
 `;
 

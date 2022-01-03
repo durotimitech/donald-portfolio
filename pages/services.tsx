@@ -1,10 +1,13 @@
-import React from 'react'
-import Services from '~/components/partials/Services/Services'
+import React from "react";
+import Layout from "~/components/partials/Layout";
+import Services from "~/components/partials/Services/Services";
 
 const ServicesPage = () => {
-    return (
-        <Services />
-    )
-}
+  return (
+    <Layout>
+      <Services />
+    </Layout>
+  );
+};
 
-export default ServicesPage
+export default ServicesPage;

@@ -46,10 +46,9 @@ export const Container = styled.div`
   margin: 0 auto;
 
   @media only screen and (min-width: 768px) {
-    max-width: 600px;
+    max-width: 700px;
   }
-
   @media only screen and (min-width: 1200px) {
-    max-width: 1000px;
+    max-width: 900px;
   }
 `;

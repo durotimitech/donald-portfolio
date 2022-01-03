@@ -9,11 +9,12 @@ export const fadeInUp = {
     y: 0,
     opacity: 1,
     transition: {
-      duration: .8,
+      duration: 0.8,
       ease: easing,
     },
   },
 };
+
 export const stagger = {
   animate: {
     transition: {

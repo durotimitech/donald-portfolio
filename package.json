@@ -5,14 +5,16 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start -p $PORT",
-    "heroku-postbuild":"npm run build",
-    "deploy":"git add . && git commit -m 'deploy' && git push -u origin master",
+    "heroku-postbuild": "npm run build",
+    "deploy": "git add . && git commit -m 'deploy' && git push -u origin master",
+    "test":"npx cypress open",
     "lint": "next lint"
   },
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "antd": "^4.18.2",
     "aos": "^2.3.4",
+    "cypress": "^9.2.0",
     "framer-motion": "^5.5.5",
     "next": "12.0.7",
     "react": "17.0.2",
