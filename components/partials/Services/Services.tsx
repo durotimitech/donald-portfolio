@@ -20,14 +20,14 @@ export const Body = styled.div`
 const Services = () => {
   return (
     <motion.div initial="initial" animate="animate" variants={stagger}>
-      <motion.div variants={fadeInUp}>
+      <motion.div variants={fadeInUp()}>
         <Body>
           {allServices.map((service) => {
             return <ServiceCard key={service.title} service={service} />;
           })}
         </Body>
       </motion.div>
-      <motion.div variants={fadeInUp}>
+      <motion.div variants={fadeInUp()}>
         <Certifications />
       </motion.div>
     </motion.div>

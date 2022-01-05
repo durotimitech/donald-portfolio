@@ -34,7 +34,7 @@ const Contact = () => {
   return (
     <motion.div initial="initial" animate="animate" variants={stagger}>
       <Body>
-        <motion.div variants={fadeInUp}>
+        <motion.div variants={fadeInUp()}>
           <Row>
             <Big>
               <PhoneFilled />
@@ -43,7 +43,7 @@ const Contact = () => {
           </Row>
         </motion.div>
 
-        <motion.div variants={fadeInUp}>
+        <motion.div variants={fadeInUp()}>
           <Row>
             <Big>
               <MailFilled />
@@ -52,7 +52,7 @@ const Contact = () => {
             <Center>donaldkene123@gmail.com</Center>
           </Row>
         </motion.div>
-        <motion.div variants={fadeInUp}>
+        <motion.div variants={fadeInUp()}>
           <Row>
             <Big>
               <TwitterCircleFilled />
@@ -60,7 +60,7 @@ const Contact = () => {
             <Center>manlikeked</Center>
           </Row>
         </motion.div>
-        <motion.div variants={fadeInUp}>
+        <motion.div variants={fadeInUp()}>
           <Row>
             <Big>
               <LinkedinFilled />

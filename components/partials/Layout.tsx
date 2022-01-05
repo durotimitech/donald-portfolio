@@ -3,8 +3,9 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import { Container } from "../styles/Globals.styled";
+import { Container, FontBold, FontLight } from "../styles/Globals.styled";
 import Head from "next/head";
+import Image from "next/image";
 
 interface IProps {
   children: JSX.Element;
@@ -21,13 +22,7 @@ const NavigationBar = styled.nav`
   padding: 1.5rem 0;
 `;
 
-const Light = styled.span`
-  font-weight: lighter;
-  opacity: 0.5;
-`;
-
-const Bold = styled.span`
-  font-weight: bold;
+const NavLink = styled.span`
   opacity: 0.5;
 `;
 
@@ -95,23 +90,41 @@ const Layout: React.FC<IProps> = ({ children }) => {
           <NavigationBar>
             <Link href="/" passHref>
               <a>
-                <Light>DONALD</Light> <Bold>EBUBE</Bold>
+                <NavLink>
+                  <FontLight>DONALD</FontLight>
+                  <FontBold> EBUBE</FontBold>
+                </NavLink>
               </a>
             </Link>
             <Link href="/" passHref>
               <a>
-                <Light>Product</Light> <Bold>Designer</Bold>
+                <NavLink>
+                  <FontLight>Product</FontLight>
+                  <FontBold> Designer</FontBold>
+                </NavLink>
               </a>
             </Link>
           </NavigationBar>
           <PageTitle>
             {path == "/designs/[designName]" ? (
               <Link href="/designs" passHref>
-                <ArrowLeftOutlined />
+                <Image
+                  src="/images/back-arrow.svg"
+                  width={25}
+                  height={25}
+                  alt="Twitter"
+                />
               </Link>
             ) : (
               <Link href="/" passHref>
-                <ArrowLeftOutlined />
+                <a>
+                  <Image
+                    src="/images/back-arrow.svg"
+                    width={25}
+                    height={25}
+                    alt="Twitter"
+                  />
+                </a>
               </Link>
             )}
             <Title>{pageTitle}</Title>

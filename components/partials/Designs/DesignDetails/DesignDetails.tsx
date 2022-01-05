@@ -19,6 +19,10 @@ interface DesignDetails {
   };
 }
 
+interface FigmaLinkProps {
+  primaryColor: string;
+}
+
 const Center = styled.div`
   text-align: center;
 `;
@@ -36,6 +40,15 @@ const Overview = styled.div`
 const Row = styled.div`
   display: flex;
 `;
+
+const FigmaLink = styled.span<FigmaLinkProps>`
+  cursor: pointer;
+
+  &:hover {
+    color: ${({ primaryColor }) => primaryColor};
+  }
+`;
+
 const Fonts = styled.span`
   display: flex;
   gap: 0.4rem;
@@ -80,7 +93,7 @@ const DesignDetails = () => {
 
   return (
     <motion.div initial="initial" animate="animate" variants={stagger}>
-      <motion.div variants={fadeInUp}>
+      <motion.div variants={fadeInUp()}>
         <Center>
           <u>
             <b>{title}</b>
@@ -88,18 +101,18 @@ const DesignDetails = () => {
         </Center>
       </motion.div>
       <br />
-      <motion.div variants={fadeInUp}>
+      <motion.div variants={fadeInUp()}>
         <Center>
           <u>Project Information</u>
         </Center>
       </motion.div>
 
       <Overview>
-        <motion.div variants={fadeInUp}>
+        <motion.div variants={fadeInUp()}>
           <b>Year of Execution :</b>
           {yearExecuted}
         </motion.div>
-        <motion.div variants={fadeInUp}>
+        <motion.div variants={fadeInUp()}>
           <Row>
             <b>Font(s) Used :</b>
             <Fonts>
@@ -109,7 +122,7 @@ const DesignDetails = () => {
             </Fonts>
           </Row>
         </motion.div>
-        <motion.div variants={fadeInUp}>
+        <motion.div variants={fadeInUp()}>
           <Row>
             <b>Color Palette:</b>
             <Colors>
@@ -122,20 +135,24 @@ const DesignDetails = () => {
             </Colors>
           </Row>
         </motion.div>
-        <motion.div variants={fadeInUp}>
-          <Row>
-            <b>Link to Figma prototype: </b>
-            <Link passHref href={link}>
-              <u>{title}</u>
-            </Link>
-          </Row>
+        <motion.div variants={fadeInUp()}>
+          {link ? (
+            <Row>
+              <b>Link to Figma prototype: </b>
+              <FigmaLink primaryColor={colors[0]}>
+                <Link passHref href={link}>
+                  <u>{title}</u>
+                </Link>
+              </FigmaLink>
+            </Row>
+          ) : null}
         </motion.div>
       </Overview>
-      <motion.div variants={fadeInUp}>
+      <motion.div variants={fadeInUp()}>
         <Divider />
       </motion.div>
       <br />
-      <motion.div variants={fadeInUp}>
+      <motion.div variants={fadeInUp()}>
         <Center>
           <u>Project Image</u>
           <br />

@@ -16,7 +16,7 @@ export const theme: DefaultTheme = {
 
 export const GlobalStyles = createGlobalStyle`
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
 
 *{
     margin:0; 
@@ -39,6 +39,14 @@ a{
 a:hover{
     color: gray;
 }
+`;
+
+export const FontLight = styled.span`
+  font-weight: 100;
+`;
+
+export const FontBold = styled.span`
+  font-weight: 700;
 `;
 
 export const Container = styled.div`

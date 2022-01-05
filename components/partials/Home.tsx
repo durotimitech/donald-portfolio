@@ -1,16 +1,12 @@
+import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import styled from "styled-components";
-import {
-  LinkedinFilled,
-  MailFilled,
-  PhoneFilled,
-  RightOutlined,
-  TwitterOutlined,
-} from "@ant-design/icons";
-import Link from "next/link";
-import { motion } from "framer-motion";
 import { fadeInUp, stagger } from "~/utilities/animations";
-import Image from "next/image";
+import { FontBold, FontLight } from "../styles/Globals.styled";
+
+const transitionAnimationDelay = 5;
 
 const Body = styled.div`
   display: flex;
@@ -27,10 +23,10 @@ const Body = styled.div`
 
 const AboutMe = styled.div``;
 
-const Location = styled.div`
+const Role = styled.div`
   display: flex;
   align-items: center;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   margin-bottom: 0.5rem;
   font-weight: lighter;
   gap: 0.3rem;
@@ -45,7 +41,7 @@ const Location = styled.div`
       opacity: 1;
     }
     50% {
-      opacity: .3;
+      opacity: 0.3;
     }
     100% {
       opacity: 1;
@@ -56,7 +52,7 @@ const Location = styled.div`
       opacity: 1;
     }
     50% {
-      opacity: .3;
+      opacity: 0.3;
     }
     100% {
       opacity: 1;
@@ -67,7 +63,7 @@ const Location = styled.div`
       opacity: 1;
     }
     50% {
-      opacity: .3;
+      opacity: 0.3;
     }
     100% {
       opacity: 1;
@@ -78,7 +74,7 @@ const Location = styled.div`
       opacity: 1;
     }
     50% {
-      opacity: .3;
+      opacity: 0.3;
     }
     100% {
       opacity: 1;
@@ -97,7 +93,7 @@ const BoxContainer = styled.div`
 
   @media only screen and (min-width: 768px) {
     width: 280px;
-    height: 170px;
+    height: 230px;
     justify-content: center;
   }
 `;
@@ -113,31 +109,109 @@ const BoxNavigationContainer = styled.div`
 
   @media only screen and (min-width: 768px) {
     width: 280px;
-    height: 170px;
+    height: 230px;
     justify-content: center;
     font-size: 1.3rem;
   }
 `;
-const FirstName = styled.span`
-  font-size: 2.5rem;
+
+const Intro = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+const Name = styled.div`
+  font-size: 2rem;
   font-weight: lighter;
   margin-right: 0.5rem;
 
   @media only screen and (min-width: 768px) {
-    font-size: 2.2rem;
+    font-size: 1.7rem;
   }
 `;
-const LastName = styled.span`
-  font-size: 2.5rem;
-  font-weight: bold;
 
-  @media only screen and (min-width: 768px) {
-    font-size: 2.2rem;
+const HelloText = styled.span`
+  position: relative;
+
+  &::before,
+  &&::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+  &::before {
+    background-color: black;
+    /* Steps is the number of characters, including spaces */
+    animation: typewriter 3s steps(9) 1s forwards;
+  }
+
+  &::after {
+    width: 0.07em;
+    background: white;
+    animation: typewriter 3s steps(9) 1s forwards, blink 750ms steps(9) infinite;
+  }
+
+  @keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+
+  @keyframes blink {
+    to {
+      background: transparent;
+    }
   }
 `;
-const Role = styled.div`
-  margin-bottom: 1rem;
+
+const NameText = styled.div`
+  position: relative;
+  width: max-content;
+
+  &::before,
+  &&::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+  &::before {
+    background-color: black;
+    /* Steps is the number of characters, including spaces */
+    animation: typewriter 4s steps(13) 4s forwards;
+  }
+
+  &::after {
+    width: 0.07em;
+    background: white;
+    animation: typewriter 4s steps(13) 4s forwards,
+      blink 750ms steps(13) 4s infinite;
+  }
+
+  @keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+
+  @keyframes blink {
+    to {
+      background: transparent;
+    }
+  }
 `;
+
+const Description = styled.div`
+  font-size: 1.2rem;
+`;
+
 const Divider = styled.div`
   @media only screen and (min-width: 768px) {
     border: 1px solid gray;
@@ -151,36 +225,47 @@ const Row = styled.div`
   align-items: center;
 `;
 
+const NavLink = styled.span`
+  font-size: 1.5rem;
+`;
+
 const Home = () => {
   return (
     <motion.div initial="initial" animate="animate" variants={stagger}>
       <Body>
-        <motion.div variants={fadeInUp}>
+        <motion.div variants={fadeInUp()}>
           <AboutMe>
-            <Location>
-              <Image
-                src="/images/location.png"
-                alt="Location Marker"
-                width="15"
-                height="15"
-              />
-              Lagos, Nigeria
-            </Location>
+            <motion.div variants={fadeInUp(transitionAnimationDelay)}>
+              <Role>
+                <FontLight>Product</FontLight>
+                <FontBold>Designer</FontBold>
+              </Role>
+            </motion.div>
             <BoxContainer>
-              <motion.div variants={fadeInUp}>
-                <FirstName>DONALD</FirstName>
-                <LastName>EBUBE</LastName>
+              <motion.div variants={fadeInUp()}>
+                <Intro>
+                  <Name>
+                    <HelloText>
+                      <FontLight>Hi There!</FontLight>
+                    </HelloText>
+
+                    <NameText>
+                      <FontLight>I&apos;m</FontLight>
+                      <FontBold> DONALD EBUBE</FontBold>
+                    </NameText>
+                  </Name>
+                </Intro>
               </motion.div>
-              <motion.div variants={fadeInUp}>
-                <Role>
-                  Product <b>Designer</b>
-                </Role>
-              </motion.div>
-              <motion.div variants={fadeInUp}>
-                Freelance visual product designer based in Lagos, Nigeria.
+              <br />
+              <br />
+              <motion.div variants={fadeInUp(transitionAnimationDelay)}>
+                <Description>
+                  <FontLight>A visual product designer based in</FontLight>
+                  <FontBold> Lagos, Nigeria.</FontBold>
+                </Description>
               </motion.div>
             </BoxContainer>
-            <motion.div variants={fadeInUp}>
+            <motion.div variants={fadeInUp(transitionAnimationDelay + 3)}>
               <Row>
                 <a>
                   <Link href="https://mobile.twitter.com/manlikeked" passHref>
@@ -188,7 +273,12 @@ const Home = () => {
                       whileHover={{ scale: 1.5 }}
                       whileTap={{ scale: 0.75 }}
                     >
-                      <TwitterOutlined />
+                      <Image
+                        src="/images/socials/twitter.svg"
+                        width={25}
+                        height={25}
+                        alt="Twitter"
+                      />
                     </motion.div>
                   </Link>
                 </a>
@@ -196,27 +286,48 @@ const Home = () => {
                   whileHover={{ scale: 1.5 }}
                   whileTap={{ scale: 0.75 }}
                 >
-                  <Link
-                    passHref
-                    href={"http://www.linkedin.com/in/donald-kenechukwu-ebube"}
-                  >
-                    <LinkedinFilled />
-                  </Link>
+                  <a>
+                    <Link
+                      passHref
+                      href={
+                        "http://www.linkedin.com/in/donald-kenechukwu-ebube"
+                      }
+                    >
+                      <Image
+                        src="/images/socials/linkedin.svg"
+                        width={25}
+                        height={25}
+                        alt="Twitter"
+                      />
+                    </Link>
+                  </a>
                 </motion.div>
                 <motion.div
                   whileHover={{ scale: 1.5 }}
                   whileTap={{ scale: 0.75 }}
                 >
-                  <Link passHref href={"+2347085704959"}>
-                    <PhoneFilled />
-                  </Link>
+                  <a>
+                    <Link passHref href={"+2347085704959"}>
+                      <Image
+                        src="/images/socials/whatsapp.svg"
+                        width={25}
+                        height={25}
+                        alt="Twitter"
+                      />
+                    </Link>
+                  </a>
                 </motion.div>
                 <motion.div
                   whileHover={{ scale: 1.5 }}
                   whileTap={{ scale: 0.75 }}
                 >
                   <a href="mailto:donaldebube@yahoo.com">
-                    <MailFilled />
+                    <Image
+                      src="/images/socials/email.svg"
+                      width={25}
+                      height={25}
+                      alt="Twitter"
+                    />
                   </a>
                 </motion.div>
               </Row>
@@ -226,34 +337,49 @@ const Home = () => {
 
         <Divider />
 
-        <motion.div variants={fadeInUp}>
+        <motion.div variants={fadeInUp()}>
           <BoxNavigationContainer>
-            <motion.div variants={fadeInUp}>
+            <motion.div variants={fadeInUp()}>
               <Link href="/services" passHref>
                 <a>
                   <Row>
-                    Services
-                    <RightOutlined />
+                    <NavLink>Services</NavLink>
+                    <Image
+                      src="/images/right-arrow.svg"
+                      width={25}
+                      height={25}
+                      alt="Right Arrow"
+                    />
                   </Row>
                 </a>
               </Link>
             </motion.div>
-            <motion.div variants={fadeInUp}>
+            <motion.div variants={fadeInUp()}>
               <Link href="/designs" passHref>
                 <a>
                   <Row>
-                    <span>Designs</span>
-                    <RightOutlined />
+                    <NavLink>Designs</NavLink>
+                    <Image
+                      src="/images/right-arrow.svg"
+                      width={25}
+                      height={25}
+                      alt="Right Arrow"
+                    />
                   </Row>
                 </a>
               </Link>
             </motion.div>
-            <motion.div variants={fadeInUp}>
+            <motion.div variants={fadeInUp()}>
               <Link href="/contact" passHref>
                 <a>
                   <Row>
-                    Contact
-                    <RightOutlined />
+                    <NavLink>Contact</NavLink>
+                    <Image
+                      src="/images/right-arrow.svg"
+                      width={25}
+                      height={25}
+                      alt="Right Arrow"
+                    />
                   </Row>
                 </a>
               </Link>

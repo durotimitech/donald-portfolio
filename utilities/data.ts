@@ -191,7 +191,7 @@ export const designs = [
         fonts: ["SF UI Display"],
         colors: ["#B75729", "#FF4133", "#232121", "#FFA800", "#FFFFFF"],
         link: "https://www.figma.com/exit?url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fi3ZIudSfOPIbjdRvmbKANU%2Fmeat--app-(Copy)%3Fpage-id%3D34%253A16%26node-id%3D34%253A35%26viewport%3D241%252C48%252C0.11%26scaling%3Dscale-down%26starting-point-node-id%3D34%253A19",
-        images: ["meato1.png", "meato2.png"],
+        images: ["meato-web1.png", "meato-web2.png"],
       },
       {
         title: "FurLok",
@@ -199,7 +199,7 @@ export const designs = [
         fonts: ["Lato,", "Oxygen"],
         colors: ["#76ABB1", "#AEB4A9", "#E3CAB2", "#424B4D", "#FFFFFF"],
         link: "https://www.figma.com/exit?url=https%3A%2F%2Fwww.figma.com%2Fproto%2FzyFZJBThN35wbTOODQB8dv%2FFurniture--website-and-mobile-(Copy)%3Fpage-id%3D160%253A232%26node-id%3D160%253A235%26viewport%3D241%252C48%252C0.11%26scaling%3Dscale-down%26starting-point-node-id%3D160%253A235",
-        images: ["furlok1.png", "furlok2.png"],
+        images: ["furlok-web1.png", "furlok-web2.png"],
       },
       {
         title: "RaleShield",

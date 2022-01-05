@@ -8,7 +8,7 @@ import { easing, fadeInUp, stagger } from "~/utilities/animations";
 export interface DesignIProps {
   category: {
     categoryName: string;
-    projects: { title: string }[];
+    projects: { title: string; colors: string[] }[];
   };
 }
 
@@ -64,7 +64,7 @@ const DesignCategory: React.FC<DesignIProps> = ({
           <Body>
             {projects &&
               projects.map((project) => (
-                <motion.div key={project.title} variants={fadeInUp}>
+                <motion.div key={project.title} variants={fadeInUp()}>
                   <DesignCard category={category} project={project} />
                 </motion.div>
               ))}

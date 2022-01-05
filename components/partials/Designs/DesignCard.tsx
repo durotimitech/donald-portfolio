@@ -9,10 +9,15 @@ import { DesignIProps } from "./DesignCategory";
 interface IProps extends DesignIProps {
   project: {
     title: string;
+    colors: string[];
   };
 }
 
-const Card = styled.div`
+interface CardProps {
+  primaryColor: string;
+}
+
+const Card = styled.div<CardProps>`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,6 +27,13 @@ const Card = styled.div`
   padding: 1rem;
   height: 120px;
   cursor: pointer;
+
+  &:hover {
+    background-color: ${({ primaryColor }) => primaryColor};
+    border: none;
+    transition: 0.5s ease;
+    color: black;
+  }
 `;
 
 const Title = styled.span`
@@ -37,7 +49,7 @@ const Divider = styled.div`
 const DesignCard: React.FC<IProps> = ({
   category,
   project,
-  project: { title },
+  project: { title, colors },
 }) => {
   const router = useRouter();
 
@@ -51,7 +63,7 @@ const DesignCard: React.FC<IProps> = ({
 
   return (
     <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.75 }}>
-      <Card onClick={changeRoute}>
+      <Card primaryColor={colors[0]} onClick={changeRoute}>
         <Title>{title}</Title>
         <Divider />
         <Small>
