@@ -16,8 +16,6 @@ export const theme: DefaultTheme = {
 
 export const GlobalStyles = createGlobalStyle`
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
-
 *{
     margin:0; 
 }
@@ -26,7 +24,7 @@ body{
     background-color:${theme.colors.background};
     color: white;
     font-family: 'Poppins', sans-serif;
-    background-image: url("/images/background.png");
+    background-image: url("/images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }

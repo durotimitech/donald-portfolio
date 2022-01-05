@@ -163,7 +163,7 @@ const HelloText = styled.span`
 
   @keyframes blink {
     to {
-      background: transparent;
+      background: black;
     }
   }
 `;
@@ -203,7 +203,7 @@ const NameText = styled.div`
 
   @keyframes blink {
     to {
-      background: transparent;
+      background: black;
     }
   }
 `;
