@@ -182,8 +182,8 @@ export const designs = [
         yearExecuted: 2021,
         fonts: ["Lato,", "Poppins,", "Manjari"],
         colors: ["#354F52", "#AEB4A9", "#E12F2F", "#424B4D", "#FFFFFF"],
-        link: "https://www.figma.com/exit?url=https%3A%2F%2Fwww.figma.com%2Fproto%2FkytyXU3qYFDVfa3S22haCN%2FAppliance------Ui-kit-website-and-mobile-(Copy)%3Fpage-id%3D93%253A87%26node-id%3D93%253A112%26viewport%3D241%252C48%252C0.72%26scaling%3Dscale-down%26starting-point-node-id%3D93%253A104s",
-        images: ["appli1.png", "appli2.png"],
+        link: "https://www.figma.com/proto/kytyXU3qYFDVfa3S22haCN/Appliance------Ui-kit-website-and-mobile-(Copy)?page-id=86%3A715&node-id=86%3A716&starting-point-node-id=86%3A716",
+        images: ["appli-web1.jpeg", "appli-web2.jpeg"],
       },
       {
         title: "Meat - O",
@@ -198,8 +198,8 @@ export const designs = [
         yearExecuted: 2021,
         fonts: ["Lato,", "Oxygen"],
         colors: ["#76ABB1", "#AEB4A9", "#E3CAB2", "#424B4D", "#FFFFFF"],
-        link: "https://www.figma.com/exit?url=https%3A%2F%2Fwww.figma.com%2Fproto%2FzyFZJBThN35wbTOODQB8dv%2FFurniture--website-and-mobile-(Copy)%3Fpage-id%3D160%253A232%26node-id%3D160%253A235%26viewport%3D241%252C48%252C0.11%26scaling%3Dscale-down%26starting-point-node-id%3D160%253A235",
-        images: ["furlok-web1.png", "furlok-web2.png"],
+        link: "https://www.figma.com/proto/zyFZJBThN35wbTOODQB8dv/Furniture--website-and-mobile-(Copy)?page-id=160%3A233&node-id=226%3A526&starting-point-node-id=226%3A526",
+        images: ["furlok-web1.jpeg", "furlok-web2.jpeg","furlok-web3.jpeg"],
       },
       {
         title: "RaleShield",
