@@ -267,54 +267,53 @@ const Home = () => {
             </BoxContainer>
             <motion.div variants={fadeInUp(transitionAnimationDelay + 3)}>
               <Row>
-                <a>
-                  <Link href="https://mobile.twitter.com/manlikeked" passHref>
-                    <motion.div
-                      whileHover={{ scale: 1.5 }}
-                      whileTap={{ scale: 0.75 }}
-                    >
-                      <Image
-                        src="/images/socials/twitter.svg"
-                        width={25}
-                        height={25}
-                        alt="Twitter"
-                      />
-                    </motion.div>
-                  </Link>
+                <a
+                  href="https://mobile.twitter.com/manlikeked"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <motion.div
+                    whileHover={{ scale: 1.5 }}
+                    whileTap={{ scale: 0.75 }}
+                  >
+                    <Image
+                      src="/images/socials/twitter.svg"
+                      width={25}
+                      height={25}
+                      alt="Twitter"
+                    />
+                  </motion.div>
                 </a>
                 <motion.div
                   whileHover={{ scale: 1.5 }}
                   whileTap={{ scale: 0.75 }}
                 >
-                  <a>
-                    <Link
-                      passHref
-                      href={
-                        "http://www.linkedin.com/in/donald-kenechukwu-ebube"
-                      }
-                    >
-                      <Image
-                        src="/images/socials/linkedin.svg"
-                        width={25}
-                        height={25}
-                        alt="Twitter"
-                      />
-                    </Link>
+                  <a
+                    href={"http://www.linkedin.com/in/donald-kenechukwu-ebube"}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Image
+                      src="/images/socials/linkedin.svg"
+                      width={25}
+                      height={25}
+                      alt="Linkedin"
+                    />
                   </a>
                 </motion.div>
                 <motion.div
                   whileHover={{ scale: 1.5 }}
                   whileTap={{ scale: 0.75 }}
                 >
-                  <a>
-                    <Link passHref href={"+2347085704959"}>
+                  <a href="tel:+2347085704959">
+
                       <Image
                         src="/images/socials/whatsapp.svg"
                         width={25}
                         height={25}
-                        alt="Twitter"
+                        alt="Whatsapp"
                       />
-                    </Link>
+
                   </a>
                 </motion.div>
                 <motion.div
@@ -326,7 +325,7 @@ const Home = () => {
                       src="/images/socials/email.svg"
                       width={25}
                       height={25}
-                      alt="Twitter"
+                      alt="email"
                     />
                   </a>
                 </motion.div>

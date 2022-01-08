@@ -6,6 +6,10 @@ import { allServices } from "~/utilities/data";
 import Certifications from "../Certifications/Certifications";
 import ServiceCard from "./ServiceCard";
 
+export const Container = styled.div`
+  height: 70vh;
+`;
+
 export const Body = styled.div`
   display: flex;
   flex-direction: column;
@@ -20,16 +24,18 @@ export const Body = styled.div`
 const Services = () => {
   return (
     <motion.div initial="initial" animate="animate" variants={stagger}>
-      <motion.div variants={fadeInUp()}>
-        <Body>
-          {allServices.map((service) => {
-            return <ServiceCard key={service.title} service={service} />;
-          })}
-        </Body>
-      </motion.div>
-      <motion.div variants={fadeInUp()}>
-        <Certifications />
-      </motion.div>
+      <Container>
+        <motion.div variants={fadeInUp()}>
+          <Body>
+            {allServices.map((service) => {
+              return <ServiceCard key={service.title} service={service} />;
+            })}
+          </Body>
+        </motion.div>
+        <motion.div variants={fadeInUp()}>
+          <Certifications />
+        </motion.div>
+      </Container>
     </motion.div>
   );
 };

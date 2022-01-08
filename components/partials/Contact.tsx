@@ -13,6 +13,7 @@ const Body = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  height: 72vh;
 `;
 
 const Row = styled.div`
@@ -39,7 +40,9 @@ const Contact = () => {
             <Big>
               <PhoneFilled />
             </Big>
-            <Center>+2347085704959</Center>
+            <Center>
+              <a href="tel:+2347085704959">+2347085704959</a>
+            </Center>
           </Row>
         </motion.div>
 
@@ -48,8 +51,14 @@ const Contact = () => {
             <Big>
               <MailFilled />
             </Big>
-            <Center>donaldebube@yahoo.com</Center>
-            <Center>donaldkene123@gmail.com</Center>
+            <Center>
+              <a href="mailto:donaldebube@yahoo.com">donaldebube@yahoo.com</a>
+            </Center>
+            <Center>
+              <a href="mailto:donaldkene123@gmail.com">
+                donaldkene123@gmail.com
+              </a>
+            </Center>
           </Row>
         </motion.div>
         <motion.div variants={fadeInUp()}>
@@ -57,7 +66,15 @@ const Contact = () => {
             <Big>
               <TwitterCircleFilled />
             </Big>
-            <Center>manlikeked</Center>
+            <Center>
+              <a
+                href="https://mobile.twitter.com/manlikeked"
+                target="_blank"
+                rel="noreferrer"
+              >
+                manlikeked
+              </a>
+            </Center>
           </Row>
         </motion.div>
         <motion.div variants={fadeInUp()}>
@@ -66,7 +83,13 @@ const Contact = () => {
               <LinkedinFilled />
             </Big>
             <Center>
-              https://www.linkedin.com/in/donald-kenechukwu-ebube/
+              <a
+                href={"http://www.linkedin.com/in/donald-kenechukwu-ebube"}
+                target="_blank"
+                rel="noreferrer"
+              >
+                https://www.linkedin.com/in/donald-kenechukwu-ebube/
+              </a>
             </Center>
           </Row>
         </motion.div>
