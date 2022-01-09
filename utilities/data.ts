@@ -47,6 +47,7 @@ export const designs = [
         colors: ["#B75729", "#FF4133", "#232121", "#FFA800", "#FFFFFF"],
         link: "https://www.figma.com/exit?url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fi3ZIudSfOPIbjdRvmbKANU%2Fmeat--app-(Copy)%3Fpage-id%3D34%253A16%26node-id%3D34%253A35%26viewport%3D241%252C48%252C0.11%26scaling%3Dscale-down%26starting-point-node-id%3D34%253A19",
         images: ["meato1.png", "meato2.png"],
+        desc: "The Meat - O mobile application design is an online meat store application that is used for purchasing different types of meat. The great thing about this online meat store application is that, as a user, you can view a catalogue of the different types of meat before purchase. While working on the design for this application, I thought about how I could make the application 'user friendly', seamless and enjoyable. I also worked on how to enhance the customer's experience while using the application by incorporating aesthetically pleasing colors and images in the design. The aim of the design is to provide an opportunity for people to purchase meat from a store and get it delivered to them in their homes without the individuals having to leave their homes.",
       },
       {
         title: "FurLok",
@@ -55,6 +56,7 @@ export const designs = [
         colors: ["#76ABB1", "#AEB4A9", "#E3CAB2", "#424B4D", "#FFFFFF"],
         link: "https://www.figma.com/exit?url=https%3A%2F%2Fwww.figma.com%2Fproto%2FzyFZJBThN35wbTOODQB8dv%2FFurniture--website-and-mobile-(Copy)%3Fpage-id%3D160%253A232%26node-id%3D160%253A235%26viewport%3D241%252C48%252C0.11%26scaling%3Dscale-down%26starting-point-node-id%3D160%253A235",
         images: ["furlok1.png", "furlok2.png"],
+        desc: "The Furlok mobile application design is an online furniture store application that is used for purchasing different types of furniture. The great thing about this online furniture store application is that, as a user, you can view a catalogue of the different types of furniture before purchase. While working on the design for this application, I thought about how I could make the application 'user friendly', seamless and enjoyable. I also worked on how to enhance the customer's experience while using the application by incorporating aesthetically pleasing colors, images and design ethics in the design. The aim of the design is to provide an opportunity for people to purchase furniture from a store and get it delivered to them in their homes without the individuals having to leave their homes.",
       },
       {
         title: "Appli",
@@ -63,6 +65,7 @@ export const designs = [
         colors: ["#354F52", "#AEB4A9", "#E12F2F", "#424B4D", "#FFFFFF"],
         link: "https://www.figma.com/exit?url=https%3A%2F%2Fwww.figma.com%2Fproto%2FkytyXU3qYFDVfa3S22haCN%2FAppliance------Ui-kit-website-and-mobile-(Copy)%3Fpage-id%3D93%253A87%26node-id%3D93%253A112%26viewport%3D241%252C48%252C0.72%26scaling%3Dscale-down%26starting-point-node-id%3D93%253A104s",
         images: ["appli1.png", "appli2.png"],
+        desc: "The Appli mobile application design is an online electronics appliance store application that is used for purchasing different types of electronic appliance. The great thing about this online electronics appliance store application is that, as a user, you can view a catalogue of the different types of electronic appliance before purchase. While working on the design for this application, I thought about how I could make the application 'user friendly', seamless, enjoyable and functional. I also worked on how to enhance the customer's experience while using the application by incorporating aesthetically pleasing colors, images and design ethics in the design. The aim of the design is to provide an opportunity for people to purchase furniture from a store and get it delivered to them in their homes without the individuals having to leave their homes.",
       },
       {
         title: "PayMe",
@@ -71,6 +74,7 @@ export const designs = [
         colors: ["#0041C4", "#FF4133", "#0F0E0E", "#89C5CC", "#FFFFFF"],
         link: "https://www.figma.com/proto/jZ8Fvv57iEGnxfTa7dDOFQ/PayMe?node-id=12%3A76&viewport=-113%2C193%2C0.31679049134254456&scaling=scale-down&fuid=695297958612483628",
         images: ["payme1.png", "payme2.png", "payme3.png", "payme4.png"],
+        desc: "The PayMe mobile application design is a FinTech application that is used for online transactions such as payment of bills, transfer of money, purchase of airtime and so much more. The great thing about this FinTech application is that, as a user, you can register multiple atm cards on it. That is, instead of a user using multiple mobile banking applications for his or her cards, he or she will be able able to use the PayMe mobile application for all of his or her cards. While working on the design for this Fintech application, I thought about how I could make the application 'user friendly', seamless and enjoyable. I also worked on how to enhance the customer's experience while using the application by incorporating fun gestures and lively illustrations in the design. The aim of the design for the PayMe mobile application is to enable customers to feel comfortable enough to make transactions easily without worrying about the mobile banking app they're using.",
       },
       {
         title: "TouristNaija",
@@ -89,6 +93,7 @@ export const designs = [
           "tourist3.png",
           "tourist4.png",
         ],
+        desc: "TouristNaija mobile application design is a tourism application specifically for tourist sights in Nigeria. This design project is a personal project of mine that was inspired by a documentary based on Nigerian culture and heritage. The TouristNaija mobile application is meant to enable tourists to find ease in planning their visit to Nigeria for sightseeing and cultural enlightenment of the diverse cultures in Nigeria. While designing this project, I focused on how to ensure that the user (tourist) has a feel of Nigeria just by being on the mobile application. I also worked on how to enhance the user's experience while using the application by incorporating captivating images in the design.",
       },
       {
         title: "Manchester United",
@@ -102,6 +107,7 @@ export const designs = [
           "machester3.png",
           "machester4.png",
         ],
+        desc: "Manchester United mobile application design is a football club application specifically for the fans of the club. This design project is a personal project of mine that was inspired by the love I have for the football club and the sport The Manchester United mobile application is a redesign of the official Manchester United mobile app. While designing this project, I focused on how to ensure that the user (club fan) has a feel of the teams culture and vibe just by being on the mobile application. I also worked on how to enhance the user's experience while using the application by incorporating captivating images and design ethics in the design.",
       },
     ],
   },
@@ -115,6 +121,7 @@ export const designs = [
         colors: ["#004557", "#E6EEF0", "#000000", "#415A77", "#EFC255"],
         link: "",
         images: ["ripple.png"],
+        desc: "This is a digital service landing page. While working on the design for this landing page, I thought about how I could make the landing page 'user friendly', seamless and enjoyable. I also worked on how to enhance the customer's experience while using the landing page by incorporating aesthetically pleasing colors and images in the design.",
       },
       {
         title: "Cos-Care",
@@ -123,6 +130,7 @@ export const designs = [
         colors: ["#004557", "#E6EEF0", "#000000", "#415A77", "#EFC255"],
         link: "",
         images: ["coscare.png"],
+        desc: "This is a skin-care service landing page. While working on the design for this landing page, I thought about how I could make the landing page 'user friendly', seamless and enjoyable. I also worked on how to enhance the customer's experience while using the landing page by incorporating aesthetically pleasing colors and images in the design.",
       },
       {
         title: "Farm-Fet",
@@ -131,6 +139,7 @@ export const designs = [
         colors: ["#004557", "#E6EEF0", "#000000", "#415A77"],
         link: "",
         images: ["farmfet.png"],
+        desc: "This is a plant store service landing page. While working on the design for this landing page, I thought about how I could make the landing page 'user friendly', seamless and enjoyable. I also worked on how to enhance the customer's experience while using the landing page by incorporating aesthetically pleasing colors and images in the design.",
       },
       {
         title: "Bookaholic",
@@ -139,6 +148,7 @@ export const designs = [
         colors: ["#004557", "#E6EEF0", "#000000", "#415A77", "#FCD5CE"],
         link: "",
         images: ["bookaholic.png"],
+        desc: "This is a book store service landing page. While working on the design for this landing page, I thought about how I could make the landing page 'user friendly', seamless and enjoyable. I also worked on how to enhance the customer's experience while using the landing page by incorporating aesthetically pleasing colors and images in the design.",
       },
       {
         title: "Fusion",
@@ -147,6 +157,7 @@ export const designs = [
         colors: ["#004557", "#E6EEF0", "#000000", "#415A77", "#FCD5CE"],
         link: "",
         images: ["fusion.png"],
+        desc: "This is a clothing store service landing page. While working on the design for this landing page, I thought about how I could make the landing page 'user friendly', seamless and enjoyable. I also worked on how to enhance the customer's experience while using the landing page by incorporating aesthetically pleasing colors and images in the design.",
       },
       {
         title: "Perfume House",
@@ -155,6 +166,7 @@ export const designs = [
         colors: ["#004557", "#E6EEF0", "#000000", "#415A77", "#FCD5CE"],
         link: "",
         images: ["perfumehouse.png"],
+        desc: "This is a perfume store service landing page. While working on the design for this landing page, I thought about how I could make the landing page 'user friendly', seamless and enjoyable. I also worked on how to enhance the customer's experience while using the landing page by incorporating aesthetically pleasing colors and images in the design.",
       },
       {
         title: "Baker Jack",
@@ -163,6 +175,7 @@ export const designs = [
         colors: ["#004557", "#E6EEF0", "#000000", "#415A77", "#FCD5CE"],
         link: "",
         images: ["bakerjack.png"],
+        desc: "This is a shoe store service landing page. While working on the design for this landing page, I thought about how I could make the landing page 'user friendly', seamless and enjoyable. I also worked on how to enhance the customer's experience while using the landing page by incorporating aesthetically pleasing colors and images in the design.",
       },
       {
         title: "Property-X",
@@ -171,6 +184,7 @@ export const designs = [
         colors: ["#678BA7", "#3189CB", "#0F0E0E", "#FFFFFF"],
         link: "",
         images: ["propertyx.png"],
+        desc: "This is a real estate landing page. While working on the design for this landing page, I thought about how I could make the landing page 'user friendly', seamless and enjoyable. I also worked on how to enhance the customer's experience while using the landing page by incorporating aesthetically pleasing colors and images in the design.",
       },
     ],
   },
@@ -192,6 +206,7 @@ export const designs = [
         colors: ["#B75729", "#FF4133", "#232121", "#FFA800", "#FFFFFF"],
         link: "https://www.figma.com/exit?url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fi3ZIudSfOPIbjdRvmbKANU%2Fmeat--app-(Copy)%3Fpage-id%3D34%253A16%26node-id%3D34%253A35%26viewport%3D241%252C48%252C0.11%26scaling%3Dscale-down%26starting-point-node-id%3D34%253A19",
         images: ["meato-web1.png", "meato-web2.png"],
+        desc: "The Meat - O mobile application design is an online meat store application that is used for purchasing different types of meat. The great thing about this online meat store application is that, as a user, you can view a catalogue of the different types of meat before purchase. While working on the design for this application, I thought about how I could make the application 'user friendly', seamless and enjoyable. I also worked on how to enhance the customer's experience while using the application by incorporating aesthetically pleasing colors and images in the design. The aim of the design is to provide an opportunity for people to purchase meat from a store and get it delivered to them in their homes without the individuals having to leave their homes.",
       },
       {
         title: "FurLok",
@@ -199,15 +214,17 @@ export const designs = [
         fonts: ["Lato,", "Oxygen"],
         colors: ["#76ABB1", "#AEB4A9", "#E3CAB2", "#424B4D", "#FFFFFF"],
         link: "https://www.figma.com/proto/zyFZJBThN35wbTOODQB8dv/Furniture--website-and-mobile-(Copy)?page-id=160%3A233&node-id=226%3A526&starting-point-node-id=226%3A526",
-        images: ["furlok-web1.jpeg", "furlok-web2.jpeg","furlok-web3.jpeg"],
+        images: ["furlok-web1.jpeg", "furlok-web2.jpeg", "furlok-web3.jpeg"],
+        desc: "The Furlok mobile application design is an online furniture store application that is used for purchasing different types of furniture. The great thing about this online furniture store application is that, as a user, you can view a catalogue of the different types of furniture before purchase. While working on the design for this application, I thought about how I could make the application 'user friendly', seamless and enjoyable. I also worked on how to enhance the customer's experience while using the application by incorporating aesthetically pleasing colors, images and design ethics in the design. The aim of the design is to provide an opportunity for people to purchase furniture from a store and get it delivered to them in their homes without the individuals having to leave their homes.",
       },
       {
         title: "RaleShield",
-        yearExecuted:2020,
-        fonts:["Philosopher Regular,", "New Rocker"],
-        colors:["#D8F3DC",'#40916C','#000000','#FFFFFF','#807B7B'],
-        link:'https://www.figma.com/exit?url=https%3A%2F%2Fwww.figma.com%2Fproto%2F4p4JKIBfbmtuXV6pBWJ5te%2FraleShield%3Fnode-id%3D1%253A2%26viewport%3D-2%252C364%252C0.39769601821899414%26scaling%3Dmin-zoom',
-        images:['raleshield.png'],
+        yearExecuted: 2020,
+        fonts: ["Philosopher Regular,", "New Rocker"],
+        colors: ["#D8F3DC", "#40916C", "#000000", "#FFFFFF", "#807B7B"],
+        link: "https://www.figma.com/exit?url=https%3A%2F%2Fwww.figma.com%2Fproto%2F4p4JKIBfbmtuXV6pBWJ5te%2FraleShield%3Fnode-id%3D1%253A2%26viewport%3D-2%252C364%252C0.39769601821899414%26scaling%3Dmin-zoom",
+        images: ["raleshield.png"],
+        desc:"The Raleshield web application design is a lawfirm web application that is used in showcasing the lawfirm’s lawyers and policies. The great thing about this online lawfirm web application is that an individual can get legal advice and legal counsel from top notch lawyers in the business."
       },
     ],
   },

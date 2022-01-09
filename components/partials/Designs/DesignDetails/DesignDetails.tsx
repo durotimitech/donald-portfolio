@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { Small } from "../../Services/ServiceCard";
 import { Image } from "antd";
@@ -15,6 +15,7 @@ interface DesignDetails {
     fonts: string[];
     colors: string[];
     link: string;
+    desc: string;
     images: string[];
   };
 }
@@ -69,9 +70,42 @@ const ColorBox = styled.div`
   width: 40px;
   height: 40px;
 `;
+const ShowMore = styled.span`
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 0.2rem;
+
+  &:hover {
+    color: gray;
+    transition: 0.5s ease;
+  }
+`;
 
 const DesignDetails = () => {
   let details: DesignDetails;
+  const [showMore, setShowMore] = useState(false);
+
+  const renderDescription = () => {
+    let description;
+
+    if (desc.length > 300 && !showMore) {
+      description = desc.substring(0, 300);
+    } else {
+      description = desc;
+    }
+
+    return (
+      <>
+        <b>Description:</b>
+        {description}
+        {showMore ? (
+          <ShowMore onClick={() => setShowMore(false)}>show less...</ShowMore>
+        ) : (
+          <ShowMore onClick={() => setShowMore(true)}>show more...</ShowMore>
+        )}
+      </>
+    );
+  };
 
   if (typeof window !== "undefined") {
     details = JSON.parse(localStorage.getItem("designDetails") || "");
@@ -85,11 +119,13 @@ const DesignDetails = () => {
         colors: ["#354F52", "#AEB4A9", "#E12F2F", "#424B4D", "#FFFFFF"],
         link: "",
         images: ["appli1.png", "appli2.png"],
+        desc: "Hello",
       },
     };
   }
 
-  const { title, yearExecuted, fonts, colors, link, images } = details.project;
+  const { title, yearExecuted, fonts, colors, link, desc, images } =
+    details.project;
 
   return (
     <motion.div initial="initial" animate="animate" variants={stagger}>
@@ -147,6 +183,7 @@ const DesignDetails = () => {
             </Row>
           ) : null}
         </motion.div>
+        <motion.div variants={fadeInUp()}>{desc && renderDescription()}</motion.div>
       </Overview>
       <motion.div variants={fadeInUp()}>
         <Divider />
