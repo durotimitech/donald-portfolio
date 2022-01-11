@@ -23,6 +23,46 @@ const Body = styled.div`
 
 const AboutMe = styled.div``;
 
+const BoxContainer = styled.div`
+  width: 320px;
+  border-top: 0.1rem solid gray;
+  border-bottom: 0.1rem solid gray;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+
+  @media only screen and (min-width: 768px) {
+    width: 280px;
+    height: 230px;
+    justify-content: center;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    width: 450px;
+  }
+`;
+const BoxNavigationContainer = styled.div`
+  width: 320px;
+  border-top: 0.1rem solid gray;
+  border-bottom: 0.1rem solid gray;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  gap: 1rem;
+
+  @media only screen and (min-width: 768px) {
+    width: 280px;
+    height: 230px;
+    justify-content: center;
+    font-size: 1.3rem;
+  }
+  @media only screen and (min-width: 1200px) {
+    width: 450px;
+  }
+`;
+
 const Role = styled.div`
   display: flex;
   align-items: center;
@@ -80,38 +120,8 @@ const Role = styled.div`
       opacity: 1;
     }
   }
-`;
-
-const BoxContainer = styled.div`
-  width: 320px;
-  border-top: 0.1rem solid gray;
-  border-bottom: 0.1rem solid gray;
-  display: flex;
-  flex-direction: column;
-  padding: 1rem 0;
-  margin-bottom: 2rem;
-
-  @media only screen and (min-width: 768px) {
-    width: 280px;
-    height: 230px;
-    justify-content: center;
-  }
-`;
-const BoxNavigationContainer = styled.div`
-  width: 320px;
-  border-top: 0.1rem solid gray;
-  border-bottom: 0.1rem solid gray;
-  display: flex;
-  flex-direction: column;
-  padding: 1rem 0;
-  margin-bottom: 2rem;
-  gap: 1rem;
-
-  @media only screen and (min-width: 768px) {
-    width: 280px;
-    height: 230px;
-    justify-content: center;
-    font-size: 1.3rem;
+  @media only screen and (min-width: 1200px) {
+    font-size: 1.6rem;
   }
 `;
 
@@ -127,6 +137,9 @@ const Name = styled.div`
 
   @media only screen and (min-width: 768px) {
     font-size: 1.7rem;
+  }
+  @media only screen and (min-width: 1200px) {
+    font-size: 2.3rem;
   }
 `;
 
@@ -210,12 +223,18 @@ const NameText = styled.div`
 
 const Description = styled.div`
   font-size: 1.2rem;
+  @media only screen and (min-width: 1200px) {
+    font-size: 1.4rem;
+  }
 `;
 
 const Divider = styled.div`
   @media only screen and (min-width: 768px) {
     border: 1px solid gray;
     height: 200px;
+  }
+  @media only screen and (min-width: 1200px) {
+    height: 280px;
   }
 `;
 
@@ -227,6 +246,10 @@ const Row = styled.div`
 
 const NavLink = styled.span`
   font-size: 1.5rem;
+
+  @media only screen and (min-width: 1200px) {
+    font-size: 2.3rem;
+  }
 `;
 
 const Home = () => {
@@ -306,14 +329,12 @@ const Home = () => {
                   whileTap={{ scale: 0.75 }}
                 >
                   <a href="tel:+2347085704959">
-
-                      <Image
-                        src="/images/socials/whatsapp.svg"
-                        width={25}
-                        height={25}
-                        alt="Whatsapp"
-                      />
-
+                    <Image
+                      src="/images/socials/whatsapp.svg"
+                      width={25}
+                      height={25}
+                      alt="Whatsapp"
+                    />
                   </a>
                 </motion.div>
                 <motion.div

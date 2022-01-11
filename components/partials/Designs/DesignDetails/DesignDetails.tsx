@@ -70,6 +70,10 @@ const ColorBox = styled.div`
   width: 40px;
   height: 40px;
 `;
+
+const Description = styled.div`
+  word-spacing: 3px;
+`;
 const ShowMore = styled.span`
   cursor: pointer;
   font-weight: bold;
@@ -97,12 +101,14 @@ const DesignDetails = () => {
     return (
       <>
         <b>Description:</b>
-        {description}
-        {showMore ? (
-          <ShowMore onClick={() => setShowMore(false)}>show less...</ShowMore>
-        ) : (
-          <ShowMore onClick={() => setShowMore(true)}>show more...</ShowMore>
-        )}
+        <Description>
+          {description}
+          {showMore ? (
+            <ShowMore onClick={() => setShowMore(false)}>show less...</ShowMore>
+          ) : (
+            <ShowMore onClick={() => setShowMore(true)}>show more...</ShowMore>
+          )}
+        </Description>
       </>
     );
   };
@@ -183,7 +189,9 @@ const DesignDetails = () => {
             </Row>
           ) : null}
         </motion.div>
-        <motion.div variants={fadeInUp()}>{desc && renderDescription()}</motion.div>
+        <motion.div variants={fadeInUp()}>
+          {desc && renderDescription()}
+        </motion.div>
       </Overview>
       <motion.div variants={fadeInUp()}>
         <Divider />

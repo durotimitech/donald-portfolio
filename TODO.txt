@@ -1,1 +1,2 @@
-8. Write Tests
+- Add more word spacing in project description
+- 
