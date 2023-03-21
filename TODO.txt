@@ -1,2 +1,0 @@
-- Add more word spacing in project description
-- 
